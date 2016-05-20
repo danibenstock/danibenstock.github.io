@@ -2008,7 +2008,7 @@
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: #35b88f url("images/banner.svg") bottom center no-repeat;
+		background: #800000 url("images/banner.svg") bottom center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
@@ -2292,10 +2292,14 @@
 
 				.box.style1 {
 					padding: 2.5em 2em 2.5em 2em;
+				border-radius: 40px;
+						overflow:hidden;
 				}
+
 
 					.box.style1.right .inner {
 						padding-left: 2em;
+						
 					}
 
 					.box.style1.left .inner {
@@ -2499,6 +2503,7 @@
 			#banner {
 				padding: 3em 2em 3em 2em;
 				background-size: auto 150%;
+
 			}
 
 				#banner header {
