@@ -3,7 +3,11 @@ body {
 }
 .container {
   margin: 100px auto 0;
-  width: 192px;
+   height:200px;
+   width:500px;
+   border: 1px solid black;
+
+  
 }
 
 .container > div {
@@ -17,7 +21,8 @@ body {
 }
 
 .container > div {
-  animation: hop 1s infinite;
+  animation: run 3s 5, hop 2s 3;
+
 }
 
 .container > div:nth-child(1) {
@@ -37,16 +42,32 @@ body {
 }
 
 @keyframes hop {
-  0%   { margin-top: 0; }
+  0%   { margin-top: 0; 
+
+  border-radius: 50%;
+  border: 6px dotted black;}
   
   30% { 
     margin-top: -30px;
   transform: rotate(180deg);
-    background: blue;
+
   }
   
   100% { margin-top: 0; 
-  background: red;
+
   border-radius: 50%;
   border: 6px dotted black;}
+}
+
+@keyframes run {
+  0%   { background: red;  }
+  
+  30% { 
+
+    background: blue;
+  }
+  
+  100% { 
+  background: red;
+
 }
