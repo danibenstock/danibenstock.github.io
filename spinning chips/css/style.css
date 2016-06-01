@@ -1,0 +1,52 @@
+body {
+  background: lightblue;
+}
+.container {
+  margin: 100px auto 0;
+  width: 192px;
+}
+
+.container > div {
+  background: white;
+  border-radius: 20%;
+   float: left;
+  height: 50px;
+  margin-right: 30px;
+  width: 50px;
+  border: 1px solid red;
+}
+
+.container > div {
+  animation: hop 1s infinite;
+}
+
+.container > div:nth-child(1) {
+  animation-delay: 1.2s;
+  
+}
+.container > div:nth-child(2) {
+  animation-delay: 3.2s;
+  
+}
+.container > div:nth-child(3) {
+  animation-delay: 3.2s;
+}
+.container > div:nth-child(4) {
+  animation-delay: 2.2s;
+   
+}
+
+@keyframes hop {
+  0%   { margin-top: 0; }
+  
+  30% { 
+    margin-top: -30px;
+  transform: rotate(180deg);
+    background: blue;
+  }
+  
+  100% { margin-top: 0; 
+  background: red;
+  border-radius: 50%;
+  border: 6px dotted black;}
+}
